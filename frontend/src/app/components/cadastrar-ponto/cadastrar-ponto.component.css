@@ -1,0 +1,43 @@
+.form-container {
+    max-width: 100%;
+    margin: auto;
+    padding: 1px;
+    border-radius: 5px;
+
+  }
+  
+  .form-group {
+    margin-bottom: 20px;
+  }
+  
+  label {
+    display: block;
+    font-weight: bold;
+    padding-bottom: 6px;
+    
+  }
+  
+  input[type="text"] {
+    width: 94%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    background-color: rgba(255,255,255,.1);
+  }
+  
+  button.submit-button {
+    display: block;
+    width: 100%;
+    padding: 10px;
+    border: none;
+    border-radius: 5px;
+    background-color: #15314e;
+    font-size: 16px;
+    cursor: pointer;
+  }
+  
+  button.submit-button:disabled {
+    background-color: #bd1b79;
+    cursor: not-allowed;
+  }
+  
