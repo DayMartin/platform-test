@@ -21,15 +21,15 @@ docker-compose up
 
 OBS: 
 
-Existe um diretório no backend chamado 'Test' para utilizar os arquivos de teste instale
-no vscode a extensão 'REST Cliente'
-
-### A rota para inclusão de pontos atualiza os dados de positions.json
-
-#### Se você já tiver o MYSQL instalado em seu computador, aconselho pausa-lo para não dar conflitos de porta com o container
+1. Se você já tiver o MYSQL instalado em seu computador, aconselho pausa-lo para não dar conflitos de porta com o container:
 
 ```sh
 sudo systemctl stop mysql
 ```
 
-### Por fim, faça o cadastro do seu usário para poder se logar no sistema
+2. A rota para inclusão de pontos atualiza os dados de positions.json
+
+3. Existe um diretório no backend chamado 'Test' para utilizar os arquivos de teste instale
+no vscode a extensão 'REST Cliente'
+
+4. Por fim, faça o cadastro do seu usário para poder se logar no sistema
