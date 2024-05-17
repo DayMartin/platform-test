@@ -1,41 +1,35 @@
-## ![logo](https://www.webrota.com.br/assets/img/logo-min.png)   
+### Como usar este projeto
 
-Hey! Seja bem vindo, este é o playground de criatividade da **WebRota**, esse repositório é nossa porta de entrada.
+### Iniciar o Backend e o Banco de dados
 
-## Como funciona?
+1. No terminal digite no diretório principal:
 
-Faça um fork deste projeto, siga as instruções de desenvolvimento abaixo, aplique sua criatividade e suas técnicas ninja e nos mostre seu código. 
+```sh
+docker-compose up
+```
 
-## O que fazer?
+### Iniciar o Front:
+1. No terminal entre no diretório ./frontend
+2. No terminal  digite: yarn dev
+3. Caso o yarn dev não funcione inicie o projeto com ''ng serve''
 
-- Crie uma aplicação simples com conexão à um banco de sua escolha.
-- Implemente autenticação e coloque os usuários no banco.
-- Utilize o arquivo **positions.json** contido nesse repositório e faça um mapa através da API de sua escolha para renderiza-lo, criando marcadores em cada coordenada contida no JSON. Esse arquivo contém uma lista de coordenadas de um trajeto cronológico, seria muito interessante a renderização de uma linha polígono unindo-as.
-- Documente seu código e as instruções de como executa-lo.
+### O Projeto iniciará
 
-### Bônus level
+- Container MySQL
+- Container Backend
+- Server Front ( sem container )
 
-- Deixe sua aplicação preparada para containers.
-- Faça sua aplicação atualizar as posições de forma temporizada através do parsing da url de raw do json deste repositório.
-- Exiba a soma da distância dos pontos renderizados.
-- Permita a criação de novos pontos no mapa. 
+OBS: 
 
-## O que devo utilizar?
+Existe um diretório no backend chamado 'Test' para utilizar os arquivos de teste instale
+no vscode a extensão 'REST Cliente'
 
-Nós acreditamos que bons desenvolvedores não são apenas usuários de linguagens ou de frameworks e que estão sempre preparados ao dinamismo. Utilize oque lhe deixar mais confortável e nos mostre seu potencial.
+### A rota para inclusão de pontos atualiza os dados de positions.json
 
-Bom, não se apegue a essa questão, mas se estiver curioso à respeito de que utilizamos aqui no nosso dia à dia, segue a relação das principais.
+#### Se você já tiver o MYSQL instalado em seu computador, aconselho pausa-lo para não dar conflitos de porta com o container
 
-- Python 3+
-- Flask + Marshmallow
-- Bootstrap 4
-- Angular 7
-- MySQL + Redis + RabbitMQ
+```sh
+sudo systemctl stop mysql
+```
 
-## E agora?
-
-Tudo pronto! Faça um pull request ou nos notifique do fork através do e-mail mauro@webrota.com.br
-
-Vem com a gente! 
-
-:)
+### Por fim, faça o cadastro do seu usário para poder se logar no sistema
