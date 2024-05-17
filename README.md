@@ -10,8 +10,8 @@ docker-compose up
 
 ### Iniciar o Front:
 1. No terminal entre no diretório ./frontend
-2. No terminal  digite: yarn dev
-3. Caso o yarn dev não funcione inicie o projeto com ''ng serve''
+2. No terminal  digite: npm install
+3. NO terminal digite: ng serve
 
 ### O Projeto iniciará
 
