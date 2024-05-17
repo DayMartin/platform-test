@@ -1,0 +1,24 @@
+### BUSCAR TODOS OS USUARIOS
+
+GET http://localhost:5000/consulta/user
+Content-Type: application/json
+
+### CADASTRAR NOVO USUARIO
+
+POST http://localhost:5000/register
+Content-Type: application/json
+
+{
+    "username": "Doria",
+    "password": "teste"
+}
+
+###
+
+POST http://localhost:5000/login
+Content-Type: application/json
+
+{
+    "username": "Doria",
+    "password": "teste"
+}
